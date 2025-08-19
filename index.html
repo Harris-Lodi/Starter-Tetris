@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Tetris</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Simple Tetris</h1>
+            <div class="game-container">
+                <div class="game-info">
+                    <div class="score-container">
+                        <h2>Score</h2>
+                        <div id="score">0</div>
+                    </div>
+                    <div class="level-container">
+                        <h2>Level</h2>
+                        <div id="level">1</div>
+                    </div>
+                    <div class="next-piece-container">
+                        <h2>Next Piece</h2>
+                        <div id="next-piece"></div>
+                    </div>
+                    <div class="controls">
+                        <h2>Controls</h2>
+                        <p>← → : Move</p>
+                        <p>↓ : Soft Drop</p>
+                        <p>↑ : Rotate</p>
+                        <p>Space : Hard Drop</p>
+                        <p>P : Pause</p>
+                    </div>
+                    <div class="button-container">
+                        <button id="start-button">Start Game</button>
+                        <button id="reset-button">Reset</button>
+                        <button id="close-button">Close App</button>
+                    </div>
+                </div>
+                <div id="game-board"></div>
+            </div>
+            <div id="closed-message" class="hidden">
+                <h2>Game Closed</h2>
+                <p>Thank you for playing Simple Tetris!</p>
+                <button id="reopen-button">Reopen Game</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
